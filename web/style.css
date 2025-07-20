@@ -1,0 +1,46 @@
+:root {
+    --dark1: #1e1e1e;
+    --dark2: #252525;
+    --dark3: #333333;
+
+    --light: #d4d4d4;
+    --accent: #7FFFD4;
+
+}
+
+html {
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+body {
+    background-color: var(--dark1);
+    color: var(--light);
+}
+
+canvas {
+    display: block;
+}
+
+#scaler {
+    display: block;
+
+    -webkit-appearance: none;
+    appearance: none;
+
+    width: 100px;
+    height: 5px;
+    border-radius: 5px;
+    background: var(--light);
+}
+
+#scaler::-webkit-slider-thumb {
+    -webkit-appearance: none;
+    appearance: none;
+    cursor: pointer;
+
+    width: 20px;
+    height: 10px;
+    border-radius: 20px;
+
+    background-color: var(--accent);
+}
